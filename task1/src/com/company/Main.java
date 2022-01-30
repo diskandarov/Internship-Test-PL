@@ -15,7 +15,7 @@ public class Main {
                 i -= 1;
             }
             // Условие, когда один цикл кругового массива заканчивается
-            if (i == arraySize && i != intervalLength) {
+            if (i == arraySize) {
                 i = 0;
             }
             circleArray.add(i + 1);
@@ -27,7 +27,7 @@ public class Main {
         String result = "";
         //Получение первым чисел интервалов
         for (int i = 0; i < circleArray.size(); i += intervalLength) {
-            result = result + circleArray.get(i);
+            result += circleArray.get(i);
         }
         System.out.println(result);
     }
